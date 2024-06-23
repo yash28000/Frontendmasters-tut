@@ -95,3 +95,13 @@ input{
     padding: auto;
     margin-right: 50px;
 }
+.payment{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.card-num{
+    border-radius: 20%; 
+    width: 50%;
+}
