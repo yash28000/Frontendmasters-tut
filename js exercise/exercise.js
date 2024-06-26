@@ -1,22 +1,17 @@
-const me = {
-    name: {
-      first: "Brian",
-      last: "Holt",
-    },
-    location: {
-      streetNumber: 500,
-      street: "Fakestreet",
-      city: "Seattle",
-      state: "WA",
-      zipCode: 55555,
-      country: "USA",
-    },
-    getAddress() {
-      return `${this.name.first} ${this.name.last}
-  ${this.location.streetNumber} ${this.location.street}
-  ${this.location.city}, ${this.location.state} ${this.location.zipCode}
-  ${this.location.country}`;
-    },
-  };
+const cities = [
+    "Seattle",
+    "San Francisco",
+    "Salt Lake City",
+    "Amsterdam",
+    "Hong Kong",
+  ];
   
-  console.log(me.getAddress());
+  // method 1
+  for (let i = 0; i < cities.length; i++) {
+    console.log(cities[i]);
+  }
+  
+  // method 2
+  cities.forEach(function (city) {
+    console.log(city);
+  });
